@@ -10,210 +10,46 @@
     <body>
         <a href=""> Home</a> /<a href="projeto.html"> projeto</a><hr>
 
-        <h2> Sem colspan </h2>
-        <table border="2" >
-            <tr>
-                <th>Código</th>
-                <th>Produto</th>
-                <th>Preço</th>
-            </tr>
+        <h2>Login</h2>
+        <form action=""> <!--action="processa.php"-->
+            Login:<br>
+            <input type="text" name="login"> <br>
+            Senha:<br>
+            <input type="password" name="senha"> <br>
+            <input type="submit" value="Logar">
+        </form> <hr>
 
-            <tr>
-                <td>001</td>
-                <td><img src="img/download (10).jpeg" width="100px"></td>
-                <td>R$ 2.500,90</td>
-            </tr>
+        <h2>Cadastre</h2>
+        <form action="">
+            Login:<br>
+            <input type="text" name="login"> <br>
+            Senha:<br>
+            <input type="password" name="senha"> <br>
 
-            <tr>
-                <td>002</td>
-                <td><img src="img/download (11).jpeg" width="100px"></td>
-                <td>R$ 1.500,90</td>
-            </tr>
+            Tipo De Conta:<br>
+            <input type="radio" name="tipoDeConta" value="PJ"> PJ<br>
+            <input type="radio" name="tipoDeConta" value="PI"> PI<br>
 
-            <tr>
-                <td>desconto</td>
-                <td >desconto -R$ 1.500,90</td>
-            </tr>
-        </table> <hr>
+            interesses:<br>
+            <input type="checkbox" name="interesses" value="Fute"> Futebol<br>
+            <input type="checkbox" name="interesses" value="Music"> Musicas<br>
+            <input type="checkbox" name="interesses" value="Game"> Games<br>
 
-        <h2> Com colspan </h2>
-        <table border="2" >
-            <tr>
-                <th>Código</th>
-                <th>Produto</th>
-                <th>Preço</th>
-            </tr>
+            Estados<br>
+            <select name="estados">
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+                <option value="MT">MT</option>
+                <option value="NT">NT</option>
+                <option value="NS">NS</option>
+                <option value="AC">AC</option>
+            </select> <p></p>
 
-            <tr>
-                <td>001</td>
-                <td><img src="img/download (10).jpeg" width="100px"></td>
-                <td>R$ 2.500,90</td>
-            </tr>
+            Observações:<br>
+            <textarea name="obs"></textarea> <br>
+            <p></p>
+            <input type="submit" value="Logar">
+        </form> <hr>
 
-            <tr>
-                <td>002</td>
-                <td><img src="img/download (11).jpeg" width="100px"></td>
-                <td>R$ 1.500,90</td>
-            </tr>
-
-            <tr>
-                <td>desconto</td>
-                <td colspan="2">desconto -R$ 1.500,90</td>
-            </tr>
-        </table> <hr>
-
-        <h2> Sem rowspan </h2>
-        <table border="2" >
-            <tr>
-                <th>Código</th>
-                <th>Produto</th>
-                <th>Preço</th>
-            </tr>
-
-            <tr>
-                <td>001</td>
-                <td><img src="img/download (10).jpeg" width="100px"></td>
-                <td>R$ 2.500,90</td>
-            </tr>
-
-            <tr>
-                <td>002</td>
-                <td><img src="img/download (11).jpeg" width="100px"></td>
-                <td>R$ 1.500,90</td>
-            </tr>
-
-            <tr>
-                <td>desconto</td>
-                <td colspan="2">desconto -R$ 1.500,90</td>
-            </tr>
-
-            <tr>
-                <td>desconto</td>
-                <td colspan="2">desconto -R$ 1.500,90</td>
-            </tr>
-
-            <tr>
-                <td>desconto</td>
-                <td colspan="2">desconto -R$ 1.500,90</td>
-            </tr>
-        </table> <hr>
-
-        <h2> com rowspan </h2>
-        <table border="2" >
-            <tr>
-                <th>Código</th>
-                <th>Produto</th>
-                <th>Preço</th>
-            </tr>
-
-            <tr>
-                <td>001</td>
-                <td><img src="img/download (10).jpeg" width="100px"></td>
-                <td>R$ 2.500,90</td>
-            </tr>
-
-            <tr>
-                <td>002</td>
-                <td><img src="img/download (11).jpeg" width="100px"></td>
-                <td>R$ 1.500,90</td>
-            </tr>
-
-            <tr>
-                <td rowspan="3">desconto</td>
-                <td colspan="2">desconto -R$ 1.500,90</td>
-            </tr>
-
-            <tr>
-                <td colspan="2">desconto -R$ 1.500,90</td>
-            </tr>
-
-            <tr>
-                <td colspan="2">desconto -R$ 1.500,90</td>
-            </tr>
-        </table> <hr>
-
-        <h2>Com width  100%</h2>
-        <table border="2" width="100%">
-            <tr>
-                <th>Código</th>
-                <th>Produto</th>
-                <th>Preço</th>
-            </tr>
-
-            <tr>
-                <td>001</td>
-                <td>Notebook</td>
-                <td>R$ 2.500,90</td>
-            </tr>
-
-            <tr>
-                <td>002</td>
-                <td>Cell</td>
-                <td>R$ 1.500,90</td>
-            </tr>
-        </table> <hr>
-
-        <h2>Com width  100%</h2>
-        <table border="2" width="50%">
-            <tr>
-                <th>Código</th>
-                <th>Produto</th>
-                <th>Preço</th>
-            </tr>
-
-            <tr>
-                <td>001</td>
-                <td>Notebook</td>
-                <td>R$ 2.500,90</td>
-            </tr>
-
-            <tr>
-                <td>002</td>
-                <td>Cell</td>
-                <td>R$ 1.500,90</td>
-            </tr>
-        </table> <hr>
-
-        <h2>Com th </h2>
-        <table border="2">
-            <tr>
-                <th>Código</th>
-                <th>Produto</th>
-                <th>Preço</th>
-            </tr>
-
-            <tr>
-                <td>001</td>
-                <td>Notebook</td>
-                <td>R$ 2.500,90</td>
-            </tr>
-
-            <tr>
-                <td>002</td>
-                <td>Cell</td>
-                <td>R$ 1.500,90</td>
-            </tr>
-        </table> <hr>
-
-        <h2> sem th </h2>
-        <table border="1">
-            <tr>
-                <td>Código</td>
-                <td>Produto</td>
-                <td>Preço</td>
-            </tr>
-
-            <tr>
-                <td>001</td>
-                <td>Notebook</td>
-                <td>R$ 2.500,90</td>
-            </tr>
-
-            <tr>
-                <td>002</td>
-                <td>Cell</td>
-                <td>R$ 1.500,90</td>
-            </tr>
-        </table>
     </body>
 </html>
